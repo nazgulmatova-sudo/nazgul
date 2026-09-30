@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Онлайн Табель Жүйесі</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Онлайн Бағалау және Табель Жүйесі</h1>
+
+    <!-- Оқушы қосу формасы -->
+    <div class="card">
+      <h2>Жаңа оқушы енгізу</h2>
+      <form id="studentForm">
+        <input type="text" id="name" placeholder="Оқушының аты-жөні" required>
+        <input type="text" id="grade" placeholder="Сыныбы (мысалы: 9А)" required>
+        <input type="text" id="subject" placeholder="Пән атауы" required>
+        <input type="number" id="mark" placeholder="Бағасы (1-5)" min="1" max="5" required>
+        <button type="submit">Қосу</button>
+      </form>
+    </div>
+
+    <!-- Табель кестесі -->
+    <div class="card">
+      <h2>Оқушылар табелі</h2>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Аты-жөні</th>
+            <th>Сыныбы</th>
+            <th>Пән</th>
+            <th>Бағасы</th>
+            <th>Әрекет</th>
+          </tr>
+        </thead>
+        <tbody id="studentList">
+          <!-- Жүйеге енгізілген оқушылар осы жерге шығады -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
